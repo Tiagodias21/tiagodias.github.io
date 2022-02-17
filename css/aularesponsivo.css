@@ -1,0 +1,91 @@
+/*normalizacoes*/
+
+body,
+h1,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Desktop */
+h1 {
+  color: gold;
+  font-size: 4rem;
+  text-align: center;
+  grid-column: 1/-1;
+  text-shadow: 2px 2px 0.5px black;
+  letter-spacing: 0.313rem;
+}
+
+#principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+#principal hr {
+  display: none;
+}
+
+p {
+}
+#principal article {
+  display: grid;
+  gap: 1rem;
+
+  align-content: start;
+  justify-content: center;
+}
+
+/* celular */
+@media (max-width: 599px) {
+  #principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  #principal hr {
+    display: inline-block;
+    background: gold;
+    border: none;
+    height: 0.938rem;
+    width: 100%;
+  }
+
+  h1 {
+    color: gold;
+    font-size: 3rem;
+    text-align: center;
+    grid-column: 1/-1;
+    text-shadow: 2px 2px 0.5px black;
+    letter-spacing: 0.313rem;
+  }
+  img {
+  }
+}
+
+/* Tablet */
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  h1 {
+    color: rgb(49, 195, 4);
+  }
+  #principal {
+    margin: 1.25rem 1.25rem;
+  }
+
+  article p {
+    text-align: justify;
+  }
+  img {
+    margin: 0 auto;
+  }
+}
