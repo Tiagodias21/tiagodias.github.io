@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiago Dias - Formulario</title>
+</head>
+
+<body>
+
+
+
+
+  <div class="form">
+    <h1> Tiago Dias </h1>
+
+    <form action="formulario.html" method="get">
+      <label for="nome"> Nome</label>
+      <input type="text" name="nome" id="nome" placeholder="Nome" required>
+
+      <label for="senha"> Senha:</label>
+      <input type="password" name="senha" id="senha" placeholder="Senha" required>
+
+      <label for="email"> E-mail:</label>
+      <input type="email" name="email" id="email" placeholder="E-mail">
+
+
+      <label for="idade"> Idade:</label>
+      <input type="date" name="idade" id="idade" placeholder="Idade">
+
+
+      <label for="cpf"> CPF:</label>
+      <input type="text" name="cpf" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+
+
+      <button type="submit">Enviar</button>
+
+
+
+
+    </form>
+  </div>
+</body>
+
+</html>
